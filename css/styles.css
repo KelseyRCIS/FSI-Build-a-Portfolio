@@ -3,8 +3,13 @@ body{
 }
 
 h1 {
-    color: red;
-    margin-right:50px;
+    color: rgb(162, 4, 4);
+    text-align:center;
+}
+
+h2 {
+    text-align:center;
+    font-style: italic;
 }
 
 hr {
@@ -18,7 +23,35 @@ img {
     margin-right: auto;
 }
 
-
+@supports(display: flex) {
+    .z.zombie2 {
+        background-color: blue;
+    }
+@supports(display: flex) {
+    .z.zombie3 {
+        background-color: rgb(191, 0, 255);
+    }
+@supports(display: flex) {
+    .z.zombie4 {
+        background-color: rgb(255, 196, 0);
+    }
+@supports(display: flex) {
+    .z.zombie5 {
+        background-color:cyan;
+    }
+@supports(display: flex) {
+    .z.zombie6 {
+        background-color:deeppink;
+    }
+@supports(display: flex) {
+    .z.zombie7 {
+        background-color:orange;
+    }
+@supports(display: flex) {
+    .z.zombie8 {
+        background-color:slateblue;
+    }    
+                          
   
   .z {
     width: 300px;
@@ -33,7 +66,7 @@ Experiments to try:
 */
 
 .zombie1 img {
-  /* Nothing is done. This is how it looks by default*/
+}/* Nothing is done. This is how it looks by default*/
 }
 .zombie2 img {
   object-fit: fill; /* This is the default */
@@ -64,17 +97,6 @@ Experiments to try:
   height: 200px;
   object-position: left;
 }
-/** Styles to help clarify demonstrations **/
-.z {
-  width: 200px;
-  height: 50px;
-  background-color: yellowgreen;
-  margin: 1em;
-}
-img {
-  width: 200px;
 
-}
-* {
-  box-sizing: border-box;
-}
+*/
+

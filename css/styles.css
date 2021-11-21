@@ -23,7 +23,45 @@ img {
     margin-right: auto;
 }
 
-@supports(display: flex) {
+
+.z.zombie1 img {
+    width: 100px;
+    height: 200px;
+    object-fit:fill;
+    object-position:right;
+    }
+.z.zombie2 img {
+    width: 600px;
+    height: 300px;
+    object-fit:scale-down;
+    object-position:left;
+    }
+.z.zombie3 img {
+    height: 400px;
+    object-fit:none; /*original image size in a small box */
+    object-position:left;
+    }
+.z.zombie4 img {
+    width:300px;
+    height:400;
+    object-fit:fill;
+    object-position:center;
+    }
+.zombie5 img {
+    width: 500px;
+    height: 400px;
+    object-fit:cover;
+    object-position:right;
+    }
+
+.z {
+    width: 300px;
+    height: 400px;
+    background-color:orange;
+    margin: 1em;
+    }
+
+    @supports(display: flex) {
     .z.zombie2 {
         background-color: blue;
     }
@@ -39,64 +77,5 @@ img {
     .z.zombie5 {
         background-color:cyan;
     }
-@supports(display: flex) {
-    .z.zombie6 {
-        background-color:deeppink;
-    }
-@supports(display: flex) {
-    .z.zombie7 {
-        background-color:orange;
-    }
-@supports(display: flex) {
-    .z.zombie8 {
-        background-color:slateblue;
-    }    
                           
   
-  .z {
-    width: 300px;
-    height: 400px;
-    background-color:darkred;
-    margin: 1em;
-  }
-
-Experiments to try:
-1. Change the width and height of .z and see how the images change (or don't).
-
-*/
-
-.zombie1 img {
-}/* Nothing is done. This is how it looks by default*/
-}
-.zombie2 img {
-  object-fit: fill; /* This is the default */
-  height: 200px;
-}
-.zombie3 img {
-  object-fit: contain;
-  height: 200px;
-}
-.zombie4 img {
-  object-fit: cover;
-  height: 200px;
-}
-.zombie5 img {
-  object-fit: none; /*original image size in a small box */
-  height: 200px;
-}
-.zombie6 img {
-  object-fit: scale-down;
-  height: 200px;
-}
-.zombie7 img {
-  object-fit: none;
-  object-position: right top;
-}
-.zombie8 img {
-  object-fit: contain;
-  height: 200px;
-  object-position: left;
-}
-
-*/
-

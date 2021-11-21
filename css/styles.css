@@ -1,0 +1,80 @@
+body{
+    background-color:rgb(197, 201, 122);
+}
+
+h1 {
+    color: red;
+    margin-right:50px;
+}
+
+hr {
+    border: 5px dashed black;
+    border-radius: 5px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+  
+  .z {
+    width: 300px;
+    height: 400px;
+    background-color:darkred;
+    margin: 1em;
+  }
+
+Experiments to try:
+1. Change the width and height of .z and see how the images change (or don't).
+
+*/
+
+.zombie1 img {
+  /* Nothing is done. This is how it looks by default*/
+}
+.zombie2 img {
+  object-fit: fill; /* This is the default */
+  height: 200px;
+}
+.zombie3 img {
+  object-fit: contain;
+  height: 200px;
+}
+.zombie4 img {
+  object-fit: cover;
+  height: 200px;
+}
+.zombie5 img {
+  object-fit: none; /*original image size in a small box */
+  height: 200px;
+}
+.zombie6 img {
+  object-fit: scale-down;
+  height: 200px;
+}
+.zombie7 img {
+  object-fit: none;
+  object-position: right top;
+}
+.zombie8 img {
+  object-fit: contain;
+  height: 200px;
+  object-position: left;
+}
+/** Styles to help clarify demonstrations **/
+.z {
+  width: 200px;
+  height: 50px;
+  background-color: yellowgreen;
+  margin: 1em;
+}
+img {
+  width: 200px;
+
+}
+* {
+  box-sizing: border-box;
+}
